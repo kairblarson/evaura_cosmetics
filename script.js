@@ -142,7 +142,7 @@ $(document).ready(function () {
         window.location.href = paymentLink;
     });
 
-    $("#buy-sweatshirt-btn").on("click", function () {
+    $("#buy-bloom-btn").on("click", function () {
         // Create a new Payment Link with the dynamic price
         const paymentLink = `https://buy.stripe.com/28o17mcto0pC7Dy6op`;
 
