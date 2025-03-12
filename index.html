@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css?vers=2" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap" rel="stylesheet" />
+        <script src="https://js.stripe.com/v3/"></script>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico?vers=2" />
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <title>Beauty Solutions | Evaura Cosmetics</title>
+        <meta name="description" content="Discover personalized beauty and skincare solutions to enhance your natural glow. Join us for expert beauty tips and product recommendations." />
+        <meta name="keywords" content="beauty, skincare, cosmetics, makeup, beauty tips, skincare routines, beauty products, natural glow" />
+        <meta property="og:title" content="Beauty and Skincare Solutions | Glow With Us" />
+        <meta property="og:description" content="Discover personalized beauty and skincare solutions to enhance your natural glow." />
+        <meta property="og:image" content="images\official-logo.png" />
+        <!-- <meta property="og:url" content="https://trainwithjay.live/index.html" /> -->
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div id="main">
+            <!-- <div class="modal-container"><div class="modal"></div></div> -->
+            <div class="navbar">
+                <!-- <div class="nav-logo-wrapper"> -->
+                <a href="index.html" class="nav-logo"><img src="images/official-logo.png" class="nav-logo" /></a>
+                <!-- </div> -->
+                <div class="nav-button-container">
+                    <!-- <button class="nav-button" id="nav-button-home">HOME</button> -->
+                    <!-- <button class="nav-button" id="nav-button-challenges">CHALLENGES</button>
+                    <a class="nav-button" id="nav-button-merchandise">MERCHANDISE</a>
+                    <button class="nav-button" id="nav-button-programs">PROGRAMS</button>
+                    <button class="nav-button" id="nav-button-contactme">CONTACT ME</button> -->
+                    <div id="unfocused-div"></div>
+                    <!-- <div id="menu-container">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div> -->
+                    <div id="mobile-menu-container">
+                        <!-- <a class="mobile-menu-btn" id="mobile-menu-home">HOME</a> -->
+                        <!-- <a class="mobile-menu-btn" id="mobile-menu-challenges">CHALLENGES</a>
+                        <a class="mobile-menu-btn" id="mobile-menu-merchandise">MERCHANDISE</a>
+                        <a class="mobile-menu-btn" id="mobile-menu-programs">PROGRAMS</a>
+                        <a class="mobile-menu-btn" id="mobile-menu-contactme">CONTACT ME</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <!-- <video loop autoplay muted playsinline id="content-video">
+                    <source src="images/vid1.mov" />
+                </video> -->
+                <img src="images/background-img.jpg" id="content-video" />
+                <!-- <img src="images/vid1.mov" class="content-main-gif" /> -->
+                <div class="content-gif-overlay">
+                    <div class="content-overlay-container">
+                        <h1 class="content-name">EVAURA COSMETICS</h1>
+                        <h2 class="content-header">EMBRACE YOUR BEAUTY TODAY</h2>
+                        <h2 class="content-subheader">LOVE YOURSELF FOREVER</h2>
+                        <div class="content-buttons-container">
+                            <button class="content-buttons" id="content-products-btn">PRODUCTS</button>
+                            <button class="content-buttons" style="background-color: transparent; color: white; border: 1px solid white" id="content-contactme-btn">CONTACT ME</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box-2">
+                    <h2 class="content-box-4-title">MY STORY</h2>
+                    <br />
+                    <div class="content-box-2-content">
+                        <p>
+                            <strong style="font-weight: bold">Evaura Cosmetics: Empowering Confidence, One Lash at a Time</strong>
+                            <br /><br />
+                            For as long as I can remember, I struggled with trichotillomania. The compulsion to pull out my eyelashes began when I was a little girl and continued through the years,
+                            leaving me feeling alone, insecure, and different. I thought no one else could possibly understand the struggle of looking in the mirror and seeing sparse, uneven lashes—or
+                            the pain of trying to hide something so personal.
+                            <br /><br />
+                            It wasn't just about my lashes. It was about how I felt about myself. It's hard to feel confident when you're constantly reminded of the things that make you “different,"
+                            and it's easy to feel like you're not beautiful when you can't see what others see. I remember feeling like I wasn't worthy of love or care, because my outer appearance
+                            didn't align with the standards I thought I had to meet.
+                            <br /><br />
+                            But then, in middle school, I found makeup. It started as an experiment with my sister's products, but when I discovered mascara, it felt like a lightbulb went off. With a
+                            few strokes, I saw something completely new. My lashes looked fuller, longer, and more defined. For the first time in a long time, I felt a sense of hope. That mascara was
+                            more than just makeup—it was a tool to help me see myself differently, to give me the confidence I'd been missing. It was a simple yet powerful reminder that I could still
+                            be beautiful, just as I was.
+                            <br /><br />
+                            The turning point came when I met Nina. Nina was the first person I had ever met in my life who shared the same struggle with trichotillomania. We connected immediately
+                            because she understood exactly what I was going through—she knew how it felt to have moments of self-doubt and insecurity about something as personal as our lashes. Her
+                            strength, her resilience, and her kindness inspired me every day. Despite the challenges, Nina always carried herself with grace, and she reminded me that we are so much
+                            more than our struggles. Losing her was devastating, but her spirit and the lessons she taught me will always be with me. She was one of the biggest reasons I found the
+                            courage to start Evaura Cosmetics. Nina's legacy—her bravery in being herself, even with the battles she fought—was something I wanted to honor.
+                            <br /><br />
+                            Evaura Cosmetics was born from that very feeling. I wanted to create something that would help women, girls, and anyone who's ever felt different or less-than. Our mascara
+                            is more than just a product—it's a symbol of self-love and empowerment. It's a reminder that you are beautiful, worthy, and capable of feeling confident, no matter what
+                            struggles you face.
+                            <br /><br />
+                            When you wear Evaura mascara, you're not just enhancing your lashes—you're embracing the parts of yourself that make you unique. The formula is designed to give you long,
+                            thick lashes that pop and curl, but the true magic comes from the confidence it gives you. Just like it helped me stop pulling out my lashes, I hope our mascara will help
+                            you stop doubting yourself and start seeing the incredible beauty that's been within you all along.
+                            <br /><br />
+                            We understand what it feels like to be in your shoes. We know the pain of feeling insecure and the challenge of overcoming those emotional hurdles. But we want you to know,
+                            you are not alone. Evaura was created to give you more than just makeup—it's a reminder that beauty is about more than appearances. It's about how you feel when you look at
+                            yourself in the mirror, and the love and care you give to yourself every day.
+                            <br /><br />
+                            Evaura isn't just a mascara—it's a journey to self-love. It's about helping you realize that you are beautiful, exactly as you are. We believe in you, and we want to help
+                            you see what we see in you—someone strong, confident, and deserving of all the love and joy the world has to offer. Our mission is to give you the confidence to embrace
+                            your uniqueness, to help you love yourself in ways you may have never thought possible.
+                            <br /><br />
+                            When you wear Evaura, you're not just wearing mascara—you're wearing your confidence, your story, and the hope that no matter what you've been through, you can always see
+                            the beauty within you. You are beautiful, and you deserve to feel it every single day.
+                            <br /><br />
+                            We're here for you. We care about how you feel, and we want to be a part of your journey toward the confidence you deserve. Because with Evaura, it's not just about the way
+                            your lashes look—it's about the way you feel. And just as Nina inspired me, I hope Evaura can inspire you to see yourself the way we see you: strong, confident, and truly
+                            beautiful.
+                        </p>
+                    </div>
+                    <br />
+                    <button class="support-movement-btn">Support The Movement</button>
+                </div>
+                <!-- <div class="line-break"></div> -->
+                <form class="content-box-4" style="padding: 40px" id="contact-form">
+                    <h2 class="content-box-4-title">CONTACT ME</h2>
+                    <br />
+                    <h3 style="max-width: 80%">Feel free to send me a message if you have any questions about me or my products!</h3>
+                    <br /><br />
+                    <div class="contact-wrapper">
+                        <div class="contact-card">
+                            <input placeholder="Your Name" id="from_name" name="from_name" class="text-inputs" />
+                            <input placeholder="Email" id="reply_to" name="reply_to" class="text-inputs" />
+                            <textarea placeholder="Message" id="message" name="message"></textarea>
+                            <button class="send-msg-btn" id="send-msg-btn" type="submit">
+                                <div class="loader"></div>
+                                <p style="color: white" id="send-btn-text">Send</p>
+                            </button>
+                        </div>
+                        <div class="socials-card">
+                            <a class="brand-logo-wrapper" href="https://www.instagram.com/jsouthard22" target="_blank">
+                                <img src="images/insta-logo.png" class="brand-logos" />
+                                <p>Evauracosmetics</p>
+                            </a>
+                            <a class="brand-logo-wrapper" href="mailto:Trainingwithjayy@gmail.com?subject=Training%20Inquiry">
+                                <img src="images/email-icon.png" class="brand-logos" style="background-color: white" />
+                                <p>evauracosmeticss@gmail.com</p>
+                            </a>
+                            <a
+                                class="brand-logo-wrapper"
+                                href="https://www.google.com/maps/place/Arlington+Heights,+IL/@42.0933805,-88.0681571,12z/data=!3m1!4b1!4m6!3m5!1s0x880fba3bce5cfa37:0xd764707ce5fdcac3!8m2!3d42.0883603!4d-87.9806265!16zL20vMHM0Zmc?entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank"
+                            >
+                                <img src="images/location-icon.png" class="brand-logos" />
+                                <p>Arlington Heights, IL.</p>
+                            </a>
+                            <!-- <div>
+                    <img src="images/insta-logo.png" class="brand-logos"/>
+                  </div> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-details">
+                <a class="brand-logo-wrapper" href="https://www.instagram.com/Evauracosmetics" target="_blank">
+                    <img src="images/white-insta-icon.png" class="brand-logo-footer" />
+                </a>
+                <a class="brand-logo-wrapper" href="mailto:evauracosmeticss@gmail.com">
+                    <img src="images/white-gmail-icon.png" class="brand-logo-footer" />
+                </a>
+                <a
+                    class="brand-logo-wrapper"
+                    href="https://www.google.com/maps/place/Arlington+Heights,+IL/@42.0933805,-88.0681571,12z/data=!3m1!4b1!4m6!3m5!1s0x880fba3bce5cfa37:0xd764707ce5fdcac3!8m2!3d42.0883603!4d-87.9806265!16zL20vMHM0Zmc?entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                >
+                    <img src="images/white-location-icon.png" class="brand-logo-footer" />
+                </a>
+            </div>
+            <small class="footer-copyright">C 2025 Copyright: Kai Larson</small>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js?vers=7"></script>
+</html>
