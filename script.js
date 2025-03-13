@@ -144,7 +144,7 @@ $(document).ready(function () {
 
     $("#buy-bloom-btn").on("click", function () {
         // Create a new Payment Link with the dynamic price
-        const paymentLink = `https://buy.stripe.com/28o17mcto0pC7Dy6op`;
+        const paymentLink = `https://buy.stripe.com/00g6rGalga0c8HCcMU`;
 
         // Redirect to the Payment Link
         window.location.href = paymentLink;
