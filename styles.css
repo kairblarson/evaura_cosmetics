@@ -415,7 +415,7 @@ p {
     font-weight: 500;
     width: 100%;
     font-size: 18px;
-    border: 1px solid rgb(132, 20, 70);
+    /* border: 1px solid rgb(132, 20, 70); */
 }
 .support-movement-btn {
     width: fit-content;
