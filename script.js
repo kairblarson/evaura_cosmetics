@@ -107,7 +107,7 @@ $(document).ready(function () {
         const selectedImage = $(".selected-image");
         const selectedImageID = Number(selectedImage.attr("id").substring(10, selectedImage.attr("id").length));
 
-        if (selectedImageID >= 3) {
+        if (selectedImageID >= 4) {
             $("#merch-img-1").addClass("selected-image");
             $("#selected-merch-image").attr("src", $("#merch-img-1").attr("src"));
         } else {
@@ -132,6 +132,15 @@ $(document).ready(function () {
 
         selectedImage.removeClass("selected-image");
     });
+
+    $(".merch-other-img").click(function(e) {
+        const imgNo = e.target.id.substring(e.target.id.length-1, e.target.id.length);
+        
+        $(".merch-other-img").removeClass("selected-image");
+
+        $(`#merch-img-${imgNo}`).addClass("selected-image");
+        $("#selected-merch-image").attr("src", $(`#merch-img-${imgNo}`).attr("src"));
+    })
 
     //merch products
     $("#buy-hat-btn").on("click", function () {
